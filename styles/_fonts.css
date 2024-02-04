@@ -1,0 +1,9 @@
+@font-face {
+  font-family: Ojan;
+  src: url('../assets/fonts/Ojan/Ojan.ttf');
+}
+@font-face {
+  font-family: Vazirmatn;
+  src: url('../assets/fonts/Vazirmatn/Vazirmatn-Regular.ttf');
+  font-weight: 400;
+}

@@ -1,0 +1,58 @@
+:root {
+  --fz-root: 62.5%;
+  --fz-base: 1.5rem;
+  --bg: #232323;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  outline: none;
+}
+html, body {
+  min-height: 100vh;
+}
+html {
+  font-size: var(--fz-root);
+  background: url("../assets/images/bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Vazirmatn;
+}
+body {
+  font-size: var(--fz-base);
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  color: white;
+}
+body.no-bg {
+  background: none;
+}
+header {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+main {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 1rem 0;
+  background: var(--bg);
+  display: grid;
+  place-items: center;
+  opacity: 0.5;
+  transition: all 200ms;
+}
+footer a {
+  border-bottom: 1px solid currentColor;
+}
+footer:hover {
+  opacity: 1;
+}
